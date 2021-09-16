@@ -1,0 +1,32 @@
+server:
+  port: 8081
+spring:
+  jpa:
+    show-sql: true
+    hibernate:
+      ddl-auto: update
+      naming-strategy: org.hibernate.cfg.ImprovedNamingStrategy
+  security:
+    oauth2:
+      client:
+        registration:
+          google:
+            clientId:
+            clientSecret:
+            redirectUri: "{baseUrl}/api/oauth2/callback/{registrationId}"
+            scope:
+              - email
+              - profile
+          facebook:
+            clientId:
+            clientSecret:
+            redirectUri: "{baseUrl}/oauth2/callback/{registrationId}"
+            scope:
+              - emails
+              - public_profile
+
+app:
+  oauth2:
+    authorizedRedirectUris:
+      - http://localhost:3000/oauth2/redirect
+      - http://localhost:3000/oauth/redirect
