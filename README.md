@@ -1,9 +1,10 @@
-Spring-Boot Project Setup
+Spring-Boot Project Setup\n
 
-Included:
+Included:\n
 
--Multi language setup. Eng - Jp
--JWT Authentication
--OAuth2 Authentication - Google and Facebook
--Mapstruct - Mapping Libary
--Flyway - Not yet, Database compare libary.
+-Multi language setup. Eng - Jp \n
+-JWT Authentication \n
+-OAuth2 Authentication - Google and Facebook \n
+-Mapstruct - Mapping Libary \n
+-Flyway - Not yet, Database compare libary.\n
+ 
